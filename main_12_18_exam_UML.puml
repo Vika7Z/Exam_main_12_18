@@ -1,0 +1,82 @@
+@startuml
+
+class Resident {
+    - resident_id: int
+    - name: str
+    + __init__(resident_id: int, name: str)
+    + to_dict()
+    + from_dict(data: dict)
+    + __str__()
+    + __repr__()
+}
+
+class Apartment {
+    - apartment_number: int
+    - floor: int
+    - number_of_rooms: int
+    - is_vacant: bool
+    - residents: list[Resident]
+    - main_resident: Resident | None
+    + __init__(apartment_number: int, floor: int, number_of_rooms: int, is_vacant: bool)
+    + to_dict()
+    + from_dict(data: dict)
+    + __str__()
+    + __repr__()
+}
+
+class ApartmentBuilding {
+    - building_number: int
+    - quantity_floor: int
+    - rooms_per_floor: list[int]
+    - apartments: list[Apartment]
+    + __init__(building_number: int, quantity_floor: int, rooms_per_floor: list[int])
+    + _generate_apartments()
+    + to_dict()
+    + from_dict(data: dict)
+    + __str__()
+    + __repr__()
+}
+
+class FileManager {
+    + save_to_file(filename: str, data: dict)
+    + load_from_file(filename: str)
+}
+
+class BuildingManager {
+    - buildings: list[ApartmentBuilding]
+    - residents: list[Resident]
+    - residents_by_id: dict[int, Resident]
+    - residents_by_name: dict[str, Resident]
+    + __new__(cls)
+    + __init__()
+    + add_building(building: ApartmentBuilding)
+    + load_data()
+    + find_resident_by_id(resident_id: int)
+    + find_resident_by_name(name: str)
+    + save_data()
+    + get_building_by_number(building_number: int)
+    + get_apartment_by_number(building_number: int, apartment_number: int)
+    + is_resident_already_assigned(resident_id: int)
+    + add_resident_to_apartment(building_number: int, apartment_number: int, resident: Resident, is_main_resident: bool)
+    + remove_resident_from_apartment(building_number: int, apartment_number: int, resident_id: int)
+    + show_all_main_residents(building_number: int)
+    + show_all_residents(building_number: int)
+    + show_all_apartments(building_number: int)
+    + show_apartment_info(building_number: int, apartment_number: int)
+    + show_apartments_by_floor(building_number: int, floor: int)
+    + show_apartments_by_room_type(building_number: int, number_of_rooms: int)
+}
+
+class InputHandler {
+    + get_input(prompt: str, expected_type: type, valid_range: Optional[list] = None)
+}
+
+BuildingManager --> ApartmentBuilding : manages >
+BuildingManager --> Resident : manages >
+ApartmentBuilding --> Apartment : contains >
+Apartment --> Resident : contains >
+ApartmentBuilding --> FileManager : uses >
+FileManager --> BuildingManager : loads/saves >
+InputHandler --> BuildingManager : used for input >
+
+@enduml

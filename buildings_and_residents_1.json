@@ -1,0 +1,256 @@
+{
+    "buildings": [
+        {
+            "building_number": 11,
+            "quantity_floor": 2,
+            "rooms_per_floor": [
+                1,
+                1,
+                2,
+                3
+            ],
+            "apartments": [
+                {
+                    "apartment_number": 1,
+                    "floor": 1,
+                    "number_of_rooms": 1,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 150,
+                            "name": "Sofya"
+                        }
+                    ],
+                    "main_resident": {
+                        "resident_id": 150,
+                        "name": "Sofya"
+                    }
+                },
+                {
+                    "apartment_number": 2,
+                    "floor": 1,
+                    "number_of_rooms": 1,
+                    "is_vacant": true,
+                    "residents": [],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 3,
+                    "floor": 1,
+                    "number_of_rooms": 2,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 158,
+                            "name": "Den"
+                        },
+                        {
+                            "resident_id": 127,
+                            "name": "Dariya"
+                        }
+                    ],
+                    "main_resident": {
+                        "resident_id": 158,
+                        "name": "Den"
+                    }
+                },
+                {
+                    "apartment_number": 4,
+                    "floor": 1,
+                    "number_of_rooms": 3,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 151,
+                            "name": "Alice"
+                        }
+                    ],
+                    "main_resident": {
+                        "resident_id": 151,
+                        "name": "Alice"
+                    }
+                },
+                {
+                    "apartment_number": 5,
+                    "floor": 2,
+                    "number_of_rooms": 1,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 102,
+                            "name": "Valya"
+                        }
+                    ],
+                    "main_resident": {
+                        "resident_id": 102,
+                        "name": "Valya"
+                    }
+                },
+                {
+                    "apartment_number": 6,
+                    "floor": 2,
+                    "number_of_rooms": 1,
+                    "is_vacant": true,
+                    "residents": [],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 7,
+                    "floor": 2,
+                    "number_of_rooms": 2,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 101,
+                            "name": "Denis"
+                        },
+                        {
+                            "resident_id": 105,
+                            "name": "Lena"
+                        },
+                        {
+                            "resident_id": 14,
+                            "name": "Meby"
+                        }
+                    ],
+                    "main_resident": {
+                        "resident_id": 101,
+                        "name": "Denis"
+                    }
+                },
+                {
+                    "apartment_number": 8,
+                    "floor": 2,
+                    "number_of_rooms": 3,
+                    "is_vacant": true,
+                    "residents": [],
+                    "main_resident": null
+                }
+            ]
+        },
+        {
+            "building_number": 1,
+            "quantity_floor": 2,
+            "rooms_per_floor": [
+                1,
+                1,
+                2,
+                3
+            ],
+            "apartments": [
+                {
+                    "apartment_number": 1,
+                    "floor": 1,
+                    "number_of_rooms": 1,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 1,
+                            "name": "Resident_1"
+                        },
+                        {
+                            "resident_id": 140,
+                            "name": "Camr"
+                        }
+                    ],
+                    "main_resident": {
+                        "resident_id": 140,
+                        "name": "Camr"
+                    }
+                },
+                {
+                    "apartment_number": 2,
+                    "floor": 1,
+                    "number_of_rooms": 1,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 3,
+                            "name": "Resident_3"
+                        },
+                        {
+                            "resident_id": 2,
+                            "name": "Resident_2"
+                        }
+                    ],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 3,
+                    "floor": 1,
+                    "number_of_rooms": 2,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 4,
+                            "name": "Resident_4"
+                        },
+                        {
+                            "resident_id": 5,
+                            "name": "Resident_5"
+                        }
+                    ],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 4,
+                    "floor": 1,
+                    "number_of_rooms": 3,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 6,
+                            "name": "Resident_6"
+                        },
+                        {
+                            "resident_id": 7,
+                            "name": "Resident_7"
+                        }
+                    ],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 5,
+                    "floor": 2,
+                    "number_of_rooms": 1,
+                    "is_vacant": false,
+                    "residents": [
+                        {
+                            "resident_id": 9,
+                            "name": "Resident_9"
+                        },
+                        {
+                            "resident_id": 8,
+                            "name": "Resident_8"
+                        }
+                    ],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 6,
+                    "floor": 2,
+                    "number_of_rooms": 1,
+                    "is_vacant": true,
+                    "residents": [],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 7,
+                    "floor": 2,
+                    "number_of_rooms": 2,
+                    "is_vacant": true,
+                    "residents": [],
+                    "main_resident": null
+                },
+                {
+                    "apartment_number": 8,
+                    "floor": 2,
+                    "number_of_rooms": 3,
+                    "is_vacant": true,
+                    "residents": [],
+                    "main_resident": null
+                }
+            ]
+        }
+    ]
+}
